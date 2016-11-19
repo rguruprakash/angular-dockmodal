@@ -1,0 +1,77 @@
+.dockmodal {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  top: auto;
+  z-index: 70;
+  height: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 0;
+  box-shadow: 0 0 5px #000;
+  overflow: hidden;
+  border: 1px solid #000;
+  border: 0 solid transparent;
+  overflow: hidden;
+}
+
+.dockmodal.minimized {
+  height: 36px;
+  top: auto;
+  left: auto;
+  right: 20px;
+  bottom: 0;
+  z-index: 70;
+}
+
+dock-modal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+dock-modal > dock-modal-header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: #424242 !important;
+  color: #fff !important;
+  min-height: 50px;
+  height: 50px;
+}
+dock-modal > dock-modal-header .dock-modal-icon {
+  padding: 8px;
+  margin: 6px;
+  flex-shrink: 0;
+  opacity: 0.6;
+  cursor: pointer;
+}
+dock-modal > dock-modal-header .dock-modal-icon:hover {
+  opacity: 1;
+  background: #737373;
+}
+dock-modal > dock-modal-header .dock-modal-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+dock-modal > dock-modal-header .dock-modal-action {
+  flex-shrink: 0;
+}
+dock-modal > dock-modal-header .dock-modal-action md-icon {
+  color: #fff !important;
+}
+dock-modal > dock-modal-content {
+  flex: 1;
+  background-color: #fff;
+  overflow: hidden;
+}
+dock-modal > dock-modal-footer {
+  flex-shrink: 0;
+  background-color: #fff;
+  border-top: 1px #ddd solid;
+}
+
+.flex {
+  flex: 1;
+}

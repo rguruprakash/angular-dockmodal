@@ -1,0 +1,16 @@
+<dock-modal>
+  <dock-modal-header>
+    <span class="flex"></span>
+    <i class="fa dock-modal-icon" ng-class="{'fa-window-maximize': isMinimized, 'fa-window-minimize': !isMinimized}" aria-hidden="true" ng-click="toggle()"></i>
+    <i class="fa fa-times dock-modal-icon" aria-hidden="true" ng-click="close()"></i>
+  </dock-modal-header>
+  <dock-modal-content>
+    <h3> ID: {{id}} </h3>
+    <a href="javascript:void(0)" ng-click="restore()">Maximize</a><br/> 
+    <a href="javascript:void(0)" ng-click="minimize()">Minimize</a><br/>
+    <a href="javascript:void(0)" ng-click="close('data')">Close and Resolve</a><br/>
+    <a href="javascript:void(0)" ng-click="close()">Close and Reject</a><br/>
+  </dock-modal-content>
+  <dock-modal-footer>
+  </dock-modal-footer>
+</dock-modal>
